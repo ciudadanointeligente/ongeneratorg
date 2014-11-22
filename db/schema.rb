@@ -11,10 +11,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141122170927) do
+ActiveRecord::Schema.define(version: 20141122201724) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "funds", force: true do |t|
+    t.string   "materia"
+    t.string   "ministerio"
+    t.string   "servicio_publico"
+    t.string   "nombre"
+    t.string   "objetivo"
+    t.string   "postulacion_quienes"
+    t.string   "postulacion_cuando"
+    t.string   "postulacion_como"
+    t.boolean  "comunidades_indigenas"
+    t.boolean  "municipalidades"
+    t.boolean  "asociaciones"
+    t.boolean  "personas_naturales"
+    t.boolean  "personas_juridicas_con_fines_de_lucro"
+    t.boolean  "personas_juridicas_sin_fines_de_lucro"
+    t.string   "donde_se_postula"
+    t.string   "areas_tematicas_de_financiamiento"
+    t.string   "monto_minimo"
+    t.string   "monto_maximo"
+    t.string   "requisitos_para_postular"
+    t.string   "contacto"
+    t.boolean  "organizaciones_participantes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "name"

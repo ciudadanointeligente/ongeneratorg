@@ -1,0 +1,28 @@
+{
+  "name": "Ongeneratorg",
+  "description": "Generate your own ONG",
+  "logo": "https://avatars3.githubusercontent.com/u/631035",
+  "repository": "https://github.com/ciudadanointeligente/ongeneratorg",
+  "keywords": [
+    "Ruby",
+    "Rails",
+    "RSpec",
+    "Bootstrap",
+    "authentication",
+    "OmniAuth"
+  ],
+  "scripts": {"postdeploy": "bundle exec rake db:migrate; bundle exec rake db:seed"},
+  "env": {
+    "OMNIAUTH_PROVIDER_KEY": {
+      "description": "Credentials from Twitter, Facebook, or another provider.",
+      "value": "some_long_key",
+      "required": false
+    },
+    "OMNIAUTH_PROVIDER_SECRET": {
+      "description": "Credentials from Twitter, Facebook, or another provider.",
+      "value": "some_long_key",
+      "required": false
+    },
+    "RAILS_ENV": "production"
+  }
+}

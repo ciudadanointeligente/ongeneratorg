@@ -1,0 +1,69 @@
+%p#notice= notice
+
+%p
+  %b Materia:
+  = @fund.materia
+%p
+  %b Ministerio:
+  = @fund.ministerio
+%p
+  %b Servicio publico:
+  = @fund.servicio_publico
+%p
+  %b Nombre:
+  = @fund.nombre
+%p
+  %b Objetivo:
+  = @fund.objetivo
+%p
+  %b Postulacion quienes:
+  = @fund.postulacion_quienes
+%p
+  %b Postulacion cuando:
+  = @fund.postulacion_cuando
+%p
+  %b Postulacion como:
+  = @fund.postulacion_como
+%p
+  %b Comunidades indigenas:
+  = @fund.comunidades_indigenas
+%p
+  %b Municipalidades:
+  = @fund.municipalidades
+%p
+  %b Asociaciones:
+  = @fund.asociaciones
+%p
+  %b Personas naturales:
+  = @fund.personas_naturales
+%p
+  %b Personas juridicas con fines de lucro:
+  = @fund.personas_juridicas_con_fines_de_lucro
+%p
+  %b Personas juridicas sin fines de lucro:
+  = @fund.personas_juridicas_sin_fines_de_lucro
+%p
+  %b Donde se postula:
+  = @fund.donde_se_postula
+%p
+  %b Areas tematicas de financiamiento:
+  = @fund.areas_tematicas_de_financiamiento
+%p
+  %b Monto minimo:
+  = @fund.monto_minimo
+%p
+  %b Monto maximo:
+  = @fund.monto_maximo
+%p
+  %b Requisitos para postular:
+  = @fund.requisitos_para_postular
+%p
+  %b Contacto:
+  = @fund.contacto
+%p
+  %b Organizaciones participantes:
+  = @fund.organizaciones_participantes
+
+= link_to 'Edit', edit_fund_path(@fund)
+\|
+= link_to 'Back', funds_path

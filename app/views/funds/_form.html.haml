@@ -1,0 +1,73 @@
+= form_for @fund do |f|
+  - if @fund.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@fund.errors.count, "error")} prohibited this fund from being saved:"
+      %ul
+        - @fund.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :materia
+    = f.text_field :materia
+  .field
+    = f.label :ministerio
+    = f.text_field :ministerio
+  .field
+    = f.label :servicio_publico
+    = f.text_field :servicio_publico
+  .field
+    = f.label :nombre
+    = f.text_field :nombre
+  .field
+    = f.label :objetivo
+    = f.text_field :objetivo
+  .field
+    = f.label :postulacion_quienes
+    = f.text_field :postulacion_quienes
+  .field
+    = f.label :postulacion_cuando
+    = f.text_field :postulacion_cuando
+  .field
+    = f.label :postulacion_como
+    = f.text_field :postulacion_como
+  .field
+    = f.label :comunidades_indigenas
+    = f.check_box :comunidades_indigenas
+  .field
+    = f.label :municipalidades
+    = f.check_box :municipalidades
+  .field
+    = f.label :asociaciones
+    = f.check_box :asociaciones
+  .field
+    = f.label :personas_naturales
+    = f.check_box :personas_naturales
+  .field
+    = f.label :personas_juridicas_con_fines_de_lucro
+    = f.check_box :personas_juridicas_con_fines_de_lucro
+  .field
+    = f.label :personas_juridicas_sin_fines_de_lucro
+    = f.check_box :personas_juridicas_sin_fines_de_lucro
+  .field
+    = f.label :donde_se_postula
+    = f.text_field :donde_se_postula
+  .field
+    = f.label :areas_tematicas_de_financiamiento
+    = f.text_field :areas_tematicas_de_financiamiento
+  .field
+    = f.label :monto_minimo
+    = f.text_field :monto_minimo
+  .field
+    = f.label :monto_maximo
+    = f.text_field :monto_maximo
+  .field
+    = f.label :requisitos_para_postular
+    = f.text_field :requisitos_para_postular
+  .field
+    = f.label :contacto
+    = f.text_field :contacto
+  .field
+    = f.label :organizaciones_participantes
+    = f.check_box :organizaciones_participantes
+  .actions
+    = f.submit 'Save'

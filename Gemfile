@@ -18,6 +18,7 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'pg'
 gem 'therubyracer', :platform=>:ruby
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
@@ -32,6 +33,7 @@ group :development do
   gem 'rb-inotify', :require=>false
   gem 'spring-commands-rspec'
 end
+
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
@@ -40,10 +42,12 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'thin'
 end
+
 group :production do
   gem 'rails_12factor'
   gem 'unicorn'
 end
+
 group :test do
   gem 'capybara'
   gem 'database_cleaner'

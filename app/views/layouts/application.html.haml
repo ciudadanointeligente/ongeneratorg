@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
-    %title= content_for?(:title) ? yield(:title) : 'ONGenerator'
+    %title= content_for?(:title) ? yield(:title) : 'ONGenerator - Descúbrete, existe, funciona'
     %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'ONGenerator'}"}
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
@@ -13,3 +13,11 @@
     %main{:role => "main"}
       = render 'layouts/messages'
       = yield
+
+  / Footer
+  %div
+    %ul
+      %p
+        Desarrollado por
+        %a{:href => "//www.ciudadanointeligente.org/", :target => "_blank"}
+          %img{:alt => "Fundación Ciudadano Inteligente", :src => asset_path('assets/logo-ciudadanoi.png'), :title => "Fundación Ciudadano Inteligente"}/

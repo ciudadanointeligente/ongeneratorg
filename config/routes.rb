@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  resources :funds
-
   resources :users
+  resources :funds
+  resources :funds do
+    get 'searches', on: :collection
+  end
+
   root to: 'visitors#index'
 
   get '/auth/:provider/callback' => 'sessions#create'

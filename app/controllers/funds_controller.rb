@@ -1,5 +1,8 @@
 class FundsController < InheritedResources::Base
 
+  def searches
+  end
+
   private
 
     def fund_params

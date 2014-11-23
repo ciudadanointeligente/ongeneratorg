@@ -1,0 +1,7 @@
+= form_tag({controller: "funds", action: "searches"}, :method => 'get', :name => 'bills_search', :id => 'bills_search') do
+  %div
+    = label_tag :q, 'Palabra clave'
+    %input.form-control{:name=>'q', :id=>'q', 'value' => params[:q], :placeholder => 'Comunidades indígenas'}
+
+  %button.btn.btn-primary.pull-right.btn-lg
+    Buscar

@@ -10,9 +10,10 @@
   %body
     %header
       = render 'layouts/navigation'
-    %main{:role => "main"}
-      = render 'layouts/messages'
-      = yield
+    %div.container
+      %main{:role => "main"}
+        = render 'layouts/messages'
+        = yield
 
   / Footer
   %div

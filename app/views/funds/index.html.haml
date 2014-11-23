@@ -1,59 +1,59 @@
-%h1 Listing funds
+%h2.page-header Fondos
 
-%table
-  %tr
-    %th Materia
-    %th Ministerio
-    %th Servicio publico
-    %th Nombre
-    %th Objetivo
-    %th Postulacion quienes
-    %th Postulacion cuando
-    %th Postulacion como
-    %th Comunidades indigenas
-    %th Municipalidades
-    %th Asociaciones
-    %th Personas naturales
-    %th Personas juridicas con fines de lucro
-    %th Personas juridicas sin fines de lucro
-    %th Donde se postula
-    %th Areas tematicas de financiamiento
-    %th Monto minimo
-    %th Monto maximo
-    %th Requisitos para postular
-    %th Contacto
-    %th Organizaciones participantes
-    %th
-    %th
-    %th
-
-  - @funds.each do |fund|
+%table.table#funds
+  %thead
     %tr
-      %td= fund.materia
-      %td= fund.ministerio
-      %td= fund.servicio_publico
-      %td= fund.nombre
-      %td= fund.objetivo
-      %td= fund.postulacion_quienes
-      %td= fund.postulacion_cuando
-      %td= fund.postulacion_como
-      %td= fund.comunidades_indigenas
-      %td= fund.municipalidades
-      %td= fund.asociaciones
-      %td= fund.personas_naturales
-      %td= fund.personas_juridicas_con_fines_de_lucro
-      %td= fund.personas_juridicas_sin_fines_de_lucro
-      %td= fund.donde_se_postula
-      %td= fund.areas_tematicas_de_financiamiento
-      %td= fund.monto_minimo
-      %td= fund.monto_maximo
-      %td= fund.requisitos_para_postular
-      %td= fund.contacto
-      %td= fund.organizaciones_participantes
-      %td= link_to 'Show', fund
-      %td= link_to 'Edit', edit_fund_path(fund)
-      %td= link_to 'Destroy', fund, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
+      %th Materia
+      %th Ministerio
+      %th Servicio publico
+      %th Nombre
+      %th Objetivo
+      %th Postulacion quienes
+      %th Postulacion cuando
+      %th Postulacion como
+      %th Comunidades indigenas
+      %th Municipalidades
+      %th Asociaciones
+      %th Personas naturales
+      %th Personas juridicas con fines de lucro
+      %th Personas juridicas sin fines de lucro
+      %th Donde se postula
+      %th Areas tematicas de financiamiento
+      %th Monto minimo
+      %th Monto maximo
+      %th Requisitos para postular
+      %th Contacto
+      %th Organizaciones participantes
+      %th
+      %th
+      %th
+  
+  %tbody
+    - @funds.each do |fund|
+      %tr
+        %td= fund.materia
+        %td= fund.ministerio
+        %td= fund.servicio_publico
+        %td= fund.nombre
+        %td= fund.objetivo
+        %td= fund.postulacion_quienes
+        %td= fund.postulacion_cuando
+        %td= fund.postulacion_como
+        %td= fund.comunidades_indigenas
+        %td= fund.municipalidades
+        %td= fund.asociaciones
+        %td= fund.personas_naturales
+        %td= fund.personas_juridicas_con_fines_de_lucro
+        %td= fund.personas_juridicas_sin_fines_de_lucro
+        %td= fund.donde_se_postula
+        %td= fund.areas_tematicas_de_financiamiento
+        %td= fund.monto_minimo
+        %td= fund.monto_maximo
+        %td= fund.requisitos_para_postular
+        %td= fund.contacto
+        %td= fund.organizaciones_participantes
+        %td= link_to 'Show', fund
+        %td= link_to 'Edit', edit_fund_path(fund)
+        %td= link_to 'Destroy', fund, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 = link_to 'New Fund', new_fund_path

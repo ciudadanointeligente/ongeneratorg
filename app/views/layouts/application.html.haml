@@ -6,6 +6,7 @@
     %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'ONGenerator'}"}
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    %script{ :src => "//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js" }
     = csrf_meta_tags
   %body
     %header
@@ -17,8 +18,7 @@
 
   / Footer
   %div
-    %ul
-      %p
-        Desarrollado por
-        %a{:href => "//www.ciudadanointeligente.org/", :target => "_blank"}
-          %img{:alt => "Fundación Ciudadano Inteligente", :src => asset_path('assets/logo-ciudadanoi.png'), :title => "Fundación Ciudadano Inteligente"}/
+    %p.text-center
+      Desarrollado por
+      %a{:href => "//www.ciudadanointeligente.org/", :target => "_blank"}
+        %img{:alt => "Fundación Ciudadano Inteligente", :src => asset_path('assets/logo-ciudadanoi.png'), :title => "Fundación Ciudadano Inteligente"}/

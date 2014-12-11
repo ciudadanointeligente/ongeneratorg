@@ -7,7 +7,9 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      = link_to 'ONGenerat.org', root_path, class: 'navbar-brand'
+      /= link_to 'ONGenerat.org', root_path, class: 'navbar-brand'
+      %a{href: '/'}
+        %img{:src => asset_path('assets/logo-ong.png'), :width => '250px' }
     .collapse.navbar-collapse
       /%ul.nav.navbar-nav
       /  = render 'layouts/navigation_links'

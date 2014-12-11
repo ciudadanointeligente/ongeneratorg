@@ -1,72 +1,66 @@
-<% content_for :title do %>Descúbrete<% end %>
-<h2 class="page-header">Descúbrete</h2>
+<div class="container">
+  <div>
+    <ol class="breadcrumb">
+      <li>
+        <a href="/">portada</a>
+      </li>
+      <li class="active">
+        descúbrete
+      </li>
+      <li>
+        <%= link_to 'existe', page_path('exist') %>
+      </li>
+      <li>
+        <%= link_to 'funciona', funds_path %>
+      </li>
+    </ol>
+  </div>
 
-<h3 class="page-header">¿Por qué crear una organización civil?</h3>
-<ul>
-  <li>No hay nadie que esté haciendo esto.</li>
-  <li>Hay otros que están haciendo esto, pero con un enfoque y actividades diferentes. Nosotros lo podríamos hacer mejor.</li>
-  <li>Porque queremos.</li>
-</ul>
+  <% content_for :title do %>Descúbrete<% end %>
+  <h2 class="page-header">Descúbrete</h2>
 
-<h3 class="page-header">¿Cuál es el objeto social de la organización?</h3>
-<ul>
-  <li>Asistencia social</li>
-  <li>Apoyo a la alimentación popular</li>
-  <li>Cívicas, enfocadas a promover la participación ciudadana en asuntos de interés público</li>
-  <li>Asistencia jurídica</li>
-  <li>Apoyo para el desarrollo de los pueblos y comunidades indígenas</li>
-  <li>Promoción de la equidad de género</li>
-  <li>Aportación de servicios para la atención a grupos sociales con discapacidad</li>
-  <li>Cooperación para el desarrollo comunitario en el entorno urbano o rural</li>
-  <li>Apoyo en la defensa y promoción de los derechos humanos</li>
-  <li>Promoción del deporte</li>
-  <li>Promoción y aportación de servicios para la atención de la salud y cuestiones sanitarias</li>
-  <li>Apoyo en el aprovechamiento de los recursos naturales, la protección del ambiente, la flora y la fauna, la preservación y restauración del equilibrio ecológico, así como la promoción del desarrollo sustentable a nivel regional y comunitario, de las zonas urbanas y rurales</li>
-  <li>Promoción y fomento educativo, cultural, artístico, científico y tecnológico</li>
-  <li>Fomento de acciones para mejorar la economía popular</li>
-  <li>Participación en acciones de protección civil</li>
-  <li>Prestación de servicios de apoyo a la creación y fortalecimiento de organizaciones que realicen actividades objeto de fomento por esta ley</li>
-  <li>Promoción y defensa de los derechos de los consumidores</li>
-  <li>Acciones que promuevan el fortalecimiento del tejido social y la seguridad ciudadana, y</li>
-  <li>Las que determinen otras leyes.</li>
-</ul>
+  <h3 class="page-header">¿Por qué crear una organización civil?</h3>
+  <ul>
+    <li>No hay nadie que esté haciendo esto.</li>
+    <li>Hay otros que están haciendo esto, pero con un enfoque y actividades diferentes. Nosotros lo podríamos hacer mejor.</li>
+    <li>Porque queremos.</li>
+  </ul>
 
-<h3 class="page-header">Qué nombre le quieren poner? (Y registrar el nombre)</h3>
+  <h3 class="page-header">¿Cuál es el objeto social de la organización?</h3>
+  <p>
+    A qué se va a dedicar tu organización, aquí dejamos algunos ejemplos de temas a los que se puede dedicar una ONG:
+  </p>
+  <ul>
+    <li>Asistencia social</li>
+    <li>Apoyo a la alimentación popular</li>
+    <li>Cívicas, enfocadas a promover la participación ciudadana en asuntos de interés público</li>
+    <li>Asistencia jurídica</li>
+    <li>Apoyo para el desarrollo de los pueblos y comunidades indígenas</li>
+    <li>Promoción de la equidad de género</li>
+    <li>Aportación de servicios para la atención a grupos sociales con discapacidad</li>
+    <li>Cooperación para el desarrollo comunitario en el entorno urbano o rural</li>
+    <li>Apoyo en la defensa y promoción de los derechos humanos</li>
+    <li>Promoción del deporte</li>
+    <li>Promoción y aportación de servicios para la atención de la salud y cuestiones sanitarias</li>
+    <li>Apoyo en el aprovechamiento de los recursos naturales, la protección del ambiente, la flora y la fauna, la preservación y restauración del equilibrio ecológico, así como la promoción del desarrollo sustentable a nivel regional y comunitario, de las zonas urbanas y rurales</li>
+    <li>Promoción y fomento educativo, cultural, artístico, científico y tecnológico</li>
+    <li>Fomento de acciones para mejorar la economía popular</li>
+    <li>Participación en acciones de protección civil</li>
+    <li>Prestación de servicios de apoyo a la creación y fortalecimiento de organizaciones que realicen actividades objeto de fomento por esta ley</li>
+    <li>Promoción y defensa de los derechos de los consumidores</li>
+    <li>Acciones que promuevan el fortalecimiento del tejido social y la seguridad ciudadana</li>
+  </ul>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum numquam quod blanditiis ea labore, soluta incidunt magni veniam fuga natus commodi sit ipsa quae. Nisi laborum eaque tempora praesentium, non.</p>
+  <h3 class="page-header">Preguntas Operacionales</h3>
+  <ul>
+    <li>Qué nombre le quieren poner?</li>
+    <li>Qué tipo de miembros tendrá la organización?</li>
+    <li>Quién será el representante legal de la organización.</li>
+    <li>Decidir la estrategia de Financiamiento</li>
+  </ul>
 
-<h3 class="page-header">Qué tipo de miembros tendrá la organización?</h3>
+  <p class="text-center">
+    <a href="//vizard-development.herokuapp.com/sandboxes/new" target="_blank" class="btn btn-success">Mapea tu Proceso</a>
+  </p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum numquam quod blanditiis ea labore, soluta incidunt magni veniam fuga natus commodi sit ipsa quae. Nisi laborum eaque tempora praesentium, non.</p>
-
-<h3 class="page-header">Qué órganos de gobierno tendrá?</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum numquam quod blanditiis ea labore, soluta incidunt magni veniam fuga natus commodi sit ipsa quae. Nisi laborum eaque tempora praesentium, non.</p>
-
-<h3 class="page-header">Quién será el representante legal de la organización. (cuáles son las implicaciones?)</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum numquam quod blanditiis ea labore, soluta incidunt magni veniam fuga natus commodi sit ipsa quae. Nisi laborum eaque tempora praesentium, non.</p>
-
-<h3 class="page-header">Cómo se elaboran los estatutos? (Formalizar los estatutos.)</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum numquam quod blanditiis ea labore, soluta incidunt magni veniam fuga natus commodi sit ipsa quae. Nisi laborum eaque tempora praesentium, non.</p>
-
-<h3 class="page-header">Tramitar el RUT.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum numquam quod blanditiis ea labore, soluta incidunt magni veniam fuga natus commodi sit ipsa quae. Nisi laborum eaque tempora praesentium, non.</p>
-
-<h3 class="page-header">Decidir la estrategia de Financiamiento (y aquí entrar a la parte de las fuentes y fondos)</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum numquam quod blanditiis ea labore, soluta incidunt magni veniam fuga natus commodi sit ipsa quae. Nisi laborum eaque tempora praesentium, non.</p>
-
-<h3 class="page-header">Elaborar el reglamento y las políticas institucionales de la organización.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum numquam quod blanditiis ea labore, soluta incidunt magni veniam fuga natus commodi sit ipsa quae. Nisi laborum eaque tempora praesentium, non.</p>
-
-<h3 class="page-header">Cambia el mundo!!!!</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum numquam quod blanditiis ea labore, soluta incidunt magni veniam fuga natus commodi sit ipsa quae. Nisi laborum eaque tempora praesentium, non.</p>
-
-<p class="text-center">
-  <a href="//vizard-development.herokuapp.com/sandboxes/new" target="_blank" class="btn btn-success">Mapea tu Proceso</a>
-</p>
+</div>

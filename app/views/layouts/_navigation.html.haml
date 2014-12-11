@@ -7,14 +7,15 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      = link_to 'Portada', root_path, class: 'navbar-brand'
+      = link_to 'ONGenerat.org', root_path, class: 'navbar-brand'
     .collapse.navbar-collapse
       /%ul.nav.navbar-nav
       /  = render 'layouts/navigation_links'
-      = link_to '1. Descúbrete', page_path('discover'), class: 'navbar-brand'
-      = link_to '2. Existe', page_path('exist'), class: 'navbar-brand'
-      = link_to '3. Funciona', funds_path, class: 'navbar-brand'
-      = link_to '3.1. Parte legal (integrar en 3 y luego ocultar)', page_path('legal'), class: 'navbar-brand'
+      /
+        = link_to '1. Descúbrete', page_path('discover'), class: 'navbar-brand'
+        = link_to '2. Existe', page_path('exist'), class: 'navbar-brand'
+        = link_to '3. Funciona', funds_path, class: 'navbar-brand'
+        = link_to '3.1. Parte legal (integrar en 3 y luego ocultar)', page_path('legal'), class: 'navbar-brand'
       = link_to 'Sobre nosotros', page_path('about'), class: 'navbar-brand pull-right'
-      = link_to '[t]', 'http://twitter.com/ciudadanoi', class: 'navbar-brand pull-right'
-      = link_to '[f]', 'http://facebook.com/ciudadanointeligente', class: 'navbar-brand pull-right'
+      = link_to '<i class="fa fa-twitter"></i>'.html_safe, 'http://twitter.com/ciudadanoi', class: 'navbar-brand pull-right', target: '_blank'
+      = link_to '<i class="fa fa-facebook"></i>'.html_safe, 'http://facebook.com/ciudadanointeligente', class: 'navbar-brand pull-right', target: '_blank'

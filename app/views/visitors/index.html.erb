@@ -1,41 +1,86 @@
-<!-- <h3>Descúbrete, existe, funciona</h3> -->
-<!-- <p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p> -->
-
-<div class="text-center">
-  <h2>Súmate a la acción colectiva</h2>
-</div>
-
-<div class="text-center">
-  <h3>Visualización explicativa del proceso</h3>
-  <p>
-    Idea > descúbrete > existe > funciona > incide
-  </p>
-</div>
-
-<!-- Agregar 3 calugas en paralelo -->
-<div class="row">
-  <div class="col-md-4 text-center main-box">
-    <div class="descubre">
-      <h4>Descúbrete</h4>
+<div class="container mainpage-header">
+  <div class="container mainpage-cell">
+    <div>
+      <i class="fa fa-group fa-5x"></i>
+      <h2>Súmate a la acción colectiva</h2>
+      <p>
+        Promovemos la asociatividad entre los ciudadanos, para que desde la sociedad civil organizada se pueda dar impulso a los cambios que queremos.
+      </p>
+      <p>
+        <a href="#descubrete">descubrete</a> / <a href="#existe">existe</a> / <a href="#funciona">funciona</a>
+      </p>
+      <!--
+      <div class="row">
+        <div class="col-md-4">
+          <p>
+            <a href="#descubrete" class="btn btn-default"> <i class="fa fa-rocket fa-2x"></i>
+            <br>
+            Descúbrete
+            </a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <p>
+            <a href="#existe" class="btn btn-default">
+              <i class="fa fa-leaf fa-2x"></i>
+              <br>
+              Existe
+            </a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <p>
+            <a href="#funciona" class="btn btn-default">
+              <i class="fa fa-gears fa-2x"></i>
+              <br>
+              Funciona
+            </a>
+          </p>
+        </div>
+      </div>
+      -->
     </div>
   </div>
-  <div class="col-md-4 text-center main-box">
-    <div class="existe">
-      <h4>Existe</h4>
-    </div>
-  </div>
-  <div class="col-md-4 text-center main-box">
-    <div class="funciona">
-      <h4>Funciona</h4>
+</div>
+
+<a name="descubrete"></a>
+<div class="container mainpage-secondary">
+  <div class="container mainpage-cell">
+    <div>
+      <i class="fa fa-rocket fa-5x"></i>
+      <h2>Descúbrete</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dicta, praesentium. Ut consectetur, explicabo, praesentium unde necessitatibus ipsa assumenda amet dolores non quo quaerat ducimus iste sunt voluptatem molestias sint.
+      </p>
+      <%= link_to 'al infinito y más allá!', page_path('discover'), class: 'btn btn-default' %>
     </div>
   </div>
 </div>
 
-<!-- Agregar frase explicativa del proyecto -->
-<div class="text-center">
-  <p>Promovemos la asociatividad entre los ciudadanos, para que desde la sociedad civil organizada se pueda dar impulso a los cambios que queremos.</p>
-
-  <iframe src="//player.vimeo.com/video/43283294" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/43283294">Súmate a la acción colectiva | Ciudadano Inteligente 2012</a> from <a href="http://vimeo.com/ciudadanointeligente">Fundaci&oacute;n Ciudadano Inteligente</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<a name="existe"></a>
+<div class="container mainpage-third">
+  <div class="container mainpage-cell">
+    <div>
+      <i class="fa fa-leaf fa-5x"></i>
+      <h2>Existe</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dicta, praesentium. Ut consectetur, explicabo, praesentium unde necessitatibus ipsa assumenda amet dolores non quo quaerat ducimus iste sunt voluptatem molestias sint.
+      </p>
+      <%= link_to 'a por ello!', page_path('exist'), class: 'btn btn-default' %>
+    </div>
+  </div>
 </div>
 
-<!-- Agregar video embed del video de los pescados vimeo.com/43283294 -->
+<a name="funciona"></a>
+<div class="container mainpage-four">
+  <div class="container mainpage-cell">
+    <div>
+      <i class="fa fa-gears fa-5x"></i>
+      <h2>Funciona</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dicta, praesentium. Ut consectetur, explicabo, praesentium unde necessitatibus ipsa assumenda amet dolores non quo quaerat ducimus iste sunt voluptatem molestias sint.
+      </p>
+      <%= link_to 'encuentra tu fondo', funds_path, class: 'btn btn-default' %>
+    </div>
+  </div>
+</div>

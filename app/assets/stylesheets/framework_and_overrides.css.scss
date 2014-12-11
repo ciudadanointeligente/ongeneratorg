@@ -1,6 +1,13 @@
 // import the CSS framework
 @import "bootstrap-sprockets";
 @import "bootstrap";
+html, body {
+  height: 100%;
+}
+
+body {
+  margin-top: 55px;
+}
 
 // make all images responsive by default
 img {
@@ -99,4 +106,111 @@ section {
   color: #FFF;
   background-color: #0070CA;
   min-height: 250px;
+}
+.mainpage-header {
+  width: 100%;
+  height: 100%; 
+  background: url(asset-path(('12610079904_fb02806985_o.jpg'))) no-repeat fixed center center / cover transparent;
+  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  display: table;
+  color: #FFF;
+  text-align: center;
+  .mainpage-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  h2, p {
+    margin: 0px auto;
+  }
+  p {
+    padding: 10px 0px;
+    max-width: 400px;
+    a {
+      color: #FFF;
+
+    }
+    a:hover {
+      background-color: transparent;
+      text-decoration: none;
+    }
+  }
+}
+.mainpage-secondary {
+  width: 100%;
+  height: 100%; 
+  background: url(asset-path(('7536128238_47417949a9_o.jpg'))) no-repeat fixed center center / cover transparent;
+  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  display: table;
+  color: #FFF;
+  text-align: center;
+  .mainpage-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  h2, p {
+    margin: 0px auto;
+  }
+  p {
+    padding: 10px 0px;
+    max-width: 400px;
+  }
+}
+.mainpage-third {
+  width: 100%;
+  height: 100%; 
+  background: url(asset-path(('8605474506_b5466f42ef_o.jpg'))) no-repeat fixed center center / cover transparent;
+  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  display: table;
+  color: #FFF;
+  text-align: center;
+  .mainpage-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  h2, p {
+    margin: 0px auto;
+  }
+  p {
+    padding: 10px 0px;
+    max-width: 400px;
+  }
+}
+
+.mainpage-four {
+  width: 100%;
+  height: 100%; 
+  background: url(asset-path(('5122851068_f5937c9168_b.jpg'))) no-repeat fixed center center / cover transparent;
+  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  display: table;
+  color: #FFF;
+  text-align: center;
+  .mainpage-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  h2, p {
+    margin: 0px auto;
+  }
+  p {
+    padding: 10px 0px;
+    max-width: 400px;
+  }
+}
+.footer {
+  color: #FFF;
+  background-color: #000;
+  min-height: 80px;
+  padding: 15px 0px;
 }

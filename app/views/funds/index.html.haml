@@ -1,28 +1,41 @@
-%h2.page-header Fondos
+%div.container
+  %div
+    %ol.breadcrumb
+      %li
+        %a{href: '/'}
+          portada
+      %li
+        = link_to 'descúbrete', page_path('discover')
+      %li
+        = link_to 'existe', page_path('exist')
+      %li.active
+        funciona
 
-%table.table.table-striped#funds
-  %thead
-    %tr
-      %th Materia
-      %th Ministerio
-      %th Servicio publico
-      %th Nombre
-      %th Objetivo
-      %th Postulacion quienes
-      %th Postulacion cuando
-      %th Postulacion como
-  
-  %tbody
-    - @funds.each do |fund|
+  %h2.page-header Funciona
+
+  %table.table.table-striped#funds
+    %thead
       %tr
-        %td= fund.materia
-        %td= fund.ministerio
-        %td= fund.servicio_publico
-        %td= fund.nombre
-        %td= fund.objetivo
-        %td= fund.postulacion_quienes
-        %td= fund.postulacion_cuando
-        %td= fund.postulacion_como
+        %th Materia
+        %th Ministerio
+        %th Servicio publico
+        %th Nombre
+        %th Objetivo
+        %th Postulacion quienes
+        %th Postulacion cuando
+        %th Postulacion como
+    
+    %tbody
+      - @funds.each do |fund|
+        %tr
+          %td= fund.materia
+          %td= fund.ministerio
+          %td= fund.servicio_publico
+          %td= fund.nombre
+          %td= fund.objetivo
+          %td= fund.postulacion_quienes
+          %td= fund.postulacion_cuando
+          %td= fund.postulacion_como
 
 :javascript
   $(document).ready(function(){
